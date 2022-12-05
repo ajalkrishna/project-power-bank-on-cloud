@@ -1,0 +1,57 @@
+<nav class="navbar navbar-expand-md">
+  <div class="container">
+    <div class="d-flex align-items-center">
+      <a class="navbar-brand" routerLink="/home"><img src="../../../assets/logo.png" width="50px" alt=""></a>
+      <h6 class="text-white pt-3">Power Bank On Cloud</h6>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link notify" data-bs-toggle="modal" data-bs-target="#exampleModal" >Notifications <span id="warning"><img *ngIf="this.util.newContract.getValue().status=='approved'" src="../../../assets/images/warning.png" width="12x" alt=""></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold">Welcome Utility C</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="../../assets/logo.png" width="25px" alt="">
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="nav-link text-dark" routerLink="/home">Home</a></li>
+            <li><a class="nav-link text-dark" routerLink="/consumer">Consumer</a></li>
+            <li><a class="nav-link text-dark" routerLink="/generator">Generator</a></li>
+            <li><a class="nav-link text-dark" routerLink="/trading">Trading</a></li>
+            <li><a class="nav-link text-dark">PPA Requests</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      
+      <div class="modal-body">
+        <div *ngIf="this.util.newContract.getValue().status=='approved'">
+          <p>New PPA contract has been approved by <span class="fw-bold">{{newPpa.generatorName}}</span> with a contract id <span class="fw-bold">{{newPpa.contractId}}</span></p>
+          <button class="btn btn-primary d-block mx-auto" (click)="confirmApproval()" data-bs-dismiss="modal">OK</button>
+        </div>
+
+        <div *ngIf="this.util.newContract.getValue().status==''">
+          <p class="text-center">No new active ppa requests!!</p>
+          <button class="btn btn-primary d-block mx-auto" data-bs-dismiss="modal">OK</button>
+        </div>
+
+        
+      </div>
+
+    </div>
+  </div>
+</div>
+  </div>
+</nav>

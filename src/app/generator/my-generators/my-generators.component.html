@@ -1,0 +1,23 @@
+<h5 class="text-center heading mb-3">My Retailers</h5>
+<div class="row row-cols-1 row-cols-lg-2 g-4">
+    <div class="col eachGenerator" *ngFor="let each of sortedUtilities">
+        <div class="d-flex align-items-center justify-content-center h-100">
+            <img src="../../../assets/images/utility-icon.png" alt="no image found" width="40px">
+            <label class="fw-bold genName">{{each.powerUtility}}</label>
+            <div class="pop-up">
+                <div>
+                    <div class="template">
+                        <p><span>Utility Name : </span>{{each.powerUtility}}</p>
+                        <p><span>Code : </span>{{each.utilityCode}}</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-btn w-100 d-flex justify-content-end">
+        <pagination class="my-pagination" [totalItems]="availableUtility.length" [directionLinks]="false" (pageChanged)="showMoreGenerators($event)"
+                    [itemsPerPage]="4"></pagination>
+    </div>
+    
+</div>

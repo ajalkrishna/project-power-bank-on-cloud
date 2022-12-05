@@ -1,0 +1,212 @@
+.utility {
+    margin-left: 1rem;
+    margin-right: 1.2rem;
+}
+
+
+.battery {
+    width: 40px;
+}
+
+.heading {
+    background-color: rgb(36, 28, 117);
+    color: white;
+    padding: 5px 0px;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+[data-bs-toggle]:hover {
+    cursor: pointer;
+    transition: 0.2s all ease;
+    transform: scale(1.05);
+}
+
+.table-bordered {
+    border: 3px solid black;
+}
+
+.pbListed {
+    position: relative;
+}
+
+.config_button {
+    background-color: rgba(20, 69, 173, 0.742);
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.785);
+}
+
+.config_pb_text,
+.config_pa_text {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-60%, -50%);
+    font-size: 1rem;
+}
+
+
+.bar-template {
+    height: 13rem;
+    position: relative;
+    // background-color: rgba(211, 211, 211, 0.258);
+}
+
+.q1,
+.q2,
+.q3,
+.q4 {
+    width: 2rem;
+    background-color: rgb(25, 3, 120);
+    box-shadow: 7px 0px 8px rgb(146, 145, 145);
+
+}
+
+.bar-template {
+
+    p,
+    hr {
+        padding: 0;
+        margin: 0;
+        font-size: 0.85rem;
+        font-weight: bold;
+    }
+
+    .base {
+        font-size: 0.8rem;
+    }
+}
+
+.revenue-q1 {
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+
+    // z-index: -1;
+    .q1 {
+        height: 3rem;
+        // box-shadow: 5px 0px 5px rgb(155, 155, 155);
+    }
+
+}
+
+.revenue-q1:hover,
+.revenue-q2:hover,
+.revenue-q3:hover,
+.revenue-q4:hover {
+    transform: scale(1.1);
+    transition: 0.2s all ease-in;
+}
+
+.revenue-q2 {
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+    // z-index: -1;
+
+    .q2 {
+        height: 6rem;
+    }
+
+}
+
+.revenue-q3 {
+    position: absolute;
+    bottom: 0;
+    left: 55%;
+
+    .q3 {
+        height: 10rem;
+    }
+}
+
+.revenue-q4 {
+    position: absolute;
+    bottom: 0;
+    left: 75%;
+
+    .q4 {
+        height: 8rem;
+    }
+}
+
+slide {
+    z-index: -1;
+}
+
+.pb_stat {
+
+    // height: 230px;
+    .box {
+
+        // height: 60px;
+        // background-color: rgba(225, 225, 236, 0.833);
+        box-shadow: 0px 0px 5px rgb(188, 220, 232);
+
+        border-radius: 40px;
+
+        h5 {
+            font-size: 1rem;
+            line-height: 0.7rem;
+        }
+
+        h6 {
+            line-height: 0.6rem;
+            font-size: 0.7rem;
+        }
+
+        .circle {
+            // border: 1px solid black;
+            background-color: white;
+            box-shadow: 0px 0px 5px rgb(167, 163, 163);
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+
+        }
+
+    }
+
+    .box:hover {
+        background-color: rgba(241, 241, 250, 0.833);
+        transition: 0.2s all ease-in;
+
+    }
+}
+
+.capacity_box {
+    // height: 60px;
+    // background-color: rgba(225, 225, 236, 0.833);
+
+    // border: 1px solid black;
+    // box-shadow: 0px 0px 3px rgba(161, 203, 238, 0.74);
+
+    align-items: center;
+    // border-radius: 10px;
+    color: darkblue;
+    border-bottom-right-radius: 30px;
+    .cTag,.cBody{
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+    .cBody{
+        color: black;
+    }
+}
+
+.ppa_approve {
+    position: relative;
+
+    .warning {
+        position: absolute;
+        top: 16px;
+        right: 22px;
+    }
+}
