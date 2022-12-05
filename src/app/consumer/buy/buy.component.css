@@ -1,0 +1,45 @@
+.modal-content{
+    border: 2px solid #3d5fc6;
+
+}
+.navbar{
+    background-color: #3d5fc6;
+   width: 100%;
+}
+.arrows::-webkit-inner-spin-button {
+    /* -webkit-appearance: none !important; */
+    opacity: 1 !important;
+    background: transparent !important;
+    border-width: 0px;
+    margin: 0;
+    border-left: 1px solid #d8d8d8;
+    height: 34px;
+    width: 23px;
+    cursor: pointer;
+  }
+  table{
+    margin: 10px;
+  }
+  th{
+    width: 50%;
+  }
+td{
+    padding: 10px 20px;
+}
+.form-control,.form-select{
+  width: 50%;
+  border-radius: 50px;
+  box-shadow: 0px 4px 8px rgba(228, 228, 247, 0.822);
+
+}
+.heading{
+  background-color: darkblue;
+  color: rgb(255, 255, 255);
+  padding: 0.3rem 0.8rem;
+  margin-left: 300px;
+}
+.btn-close{
+  border: 1px solid red;
+  background-color: white;
+  color: red;
+}
